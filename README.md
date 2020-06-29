@@ -41,3 +41,8 @@ $ python /PATH/TO/reader_publisher.py ./scene000/PCDPoints ./scene000/Annotation
 ```
 
 ![Image of OccupancyGrid and VectorMap](./img/rviz_visualization.png)
+
+
+## PCD move
+
+`find -iname "*.pcd" | sed 's/\(.*\)\/\(.*\)\.\(.*\)$/mv \1\/\2\.\3 \1\.pcd/ ' > process.sh && sh process.sh`
